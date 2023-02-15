@@ -8,42 +8,44 @@
 
 <body>
 	<form method="get">
-        <div>
-			<label for="name">Name8</label>
-			<input type="text" required id="name">
-		</div>
-        <div>
-			<label for="email">Email*</label>
-			<input type="email" id="email" required>
-		</div>
-        <div>
-            <label for="gender">Gender*</label>
-            <input type="radio" id="gender" name="gender" required>Male
-            <input type="radio" id="gender" name="gender" required>Female
-        </div>
-        <div>
-            <label for="cars">Car Brands</label>
-            <select id="cars">
-                <option value="bmw">BMW</option>
-                <option value="audi">Audi</option>
-                <option value="mercedez">Mercedez</option>
-            </select>
-        </div>
-        <div>
-            <label for="carage">Car Age*</label>
-            <input type="number" id="carage" required min="0">
-        </div>
-        <div>
-            <label for="dop">Date of Purchase(dop)*</label>
-            <input type="date" required id="dop">
-        </div>
-        <div>
-            <label for="password">Password*</label>
-            <input type="password" required id="password">
-        </div>
-        <div>
-            <button type="submit" value="Submit">Submit</button>
-        </div>
+        <label for="name">Name8</label>
+		<input type="text" required id="name">
+		<br>
+		
+		<label for="email">Email*</label>
+		<input type="email" id="email" required>
+		<br>
+		
+        <label>Gender*</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+		<label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+		<label for="female">Female</label>
+        <br>
+
+		
+        <label for="cars">Car Brands</label>
+		<select id="cars" name="cars" required>
+			<option value="" disabled selected>Select a car brand</option>
+			<option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="mercedez">Mercedez</option>
+        </select>
+        <br>
+		
+        <label for="carage">Car Age*</label>
+        <input type="number" id="carage" name="carage" required>
+        <br>
+		
+        <label for="dop">Date of Purchase(dop)*</label>
+        <input type="date" required id="dop">
+        <br>
+		
+        <label for="password">Password*</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+		
+		<button type="submit">Submit</button>
     </form>
 
 </body>
